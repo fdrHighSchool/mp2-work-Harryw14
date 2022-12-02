@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+   System.out.println("What is your grade");
+   Scanner input=new Scanner(System.in);
+   int x;
+   x=input.nextInt();
+    if(x<59){
+      System.out.println("F");
+    }
+     else{
+      if(x>59){
+        if(x>69){
+          if(x>79){
+            if(x>89){
+              System.out.println("A");
+            }
+            else{
+              if (x>79){
+                System.out.println("B");
+              }
+            }
+          }
+          else{
+            System.out.println("C");
+          }
+        }
+        else{
+         System.out.println("D");
+        }
+      }
+      else{
+        System.out.println("F");
+      }
+    }
+    
+ }
+}
+
+  
