@@ -1,0 +1,39 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner input=new Scanner(System.in);
+    System.out.println("What's the number");
+    int x;
+    int y;
+    int z;
+    int q;
+    int w;
+    int r;
+    int a;
+    int u;
+    int i;
+    int o;
+    int p;
+    int e;
+    x=input.nextInt();
+    y=(x%10);
+    z=(((x%100)-y)/10);
+    q=(((x-(x%100))/100));
+    w=(((x-(x%1000))/1000));
+    r=(((x-(x%10000))/10000));
+    a=(((x-(x%100000))/100000));
+    u=(((x-(x%1000000))/1000000));
+    i=(((x-(x%10000000))/10000000));
+    o=(((x-(x%100000000))/100000000));
+    p=(((x-(x%1000000000))/1000000000));
+    e=(x+y+z+q+w+r+a+u+i+o+p);
+    if (e%3==0){
+      System.out.println("True");
+    }
+    else{
+      System.out.println("False");
+    }
+    
+    
+  }
+}
